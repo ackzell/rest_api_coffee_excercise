@@ -12,6 +12,7 @@ Lessons learned:
 * The name of the npm module is ```coffee-script``` and not ```coffeescript```, npm will let you know you've spelled it wrong anyways.
 
 * When you get something like:
+
         Error: Cannot find module 'body-parser'
     Means you have to install the module, you are requiring a module that isn't in the ``node_modules`` folder.
 
