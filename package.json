@@ -1,0 +1,31 @@
+{
+  "name": "rest_api_coffee_excercise",
+  "version": "0.0.0",
+  "description": "Excercise to build a restful api using mongoose and cofeescript.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ackzell/rest_api_coffee_excercise.git"
+  },
+  "keywords": [
+    "mongoose",
+    "coffeescript",
+    "express",
+    "nodejs",
+    "api"
+  ],
+  "author": "ackzell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ackzell/rest_api_coffee_excercise/issues"
+  },
+  "homepage": "https://github.com/ackzell/rest_api_coffee_excercise",
+  "devDependencies": {
+    "mongoose": "^3.8.16",
+    "coffee-script": "^1.8.0",
+    "express": "^4.9.1"
+  }
+}
