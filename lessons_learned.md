@@ -1,3 +1,4 @@
+
 18.09.14
 
 Lessons learned:
@@ -29,3 +30,11 @@ Lessons learned:
         .
         .
     Means you have already some other application runing on the same port. Still have to figure out how to handle it in the code so that it doesn't break the app.
+
+02.10.14
+
+* To open Sublime Text (or any program really) through Git Bash:
+According to [this](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=4461) forum:
+	1. Find the location of the ```.bash_profile``` file with this: ```echo $HOME```. If the file does not exist, create one with the same name.
+	2. Add an [```alias```](http://tldp.org/LDP/abs/html/aliases.html) line to the file using this: ```alias subl="/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"``` (the path to the actual instance of sublime must be different for every installation, for instance, I changed it to ```"/c/Program\ Files/Sublime\ Text/sublime_text.exe"```)
+	3. If you pass a ```.``` to the command, it will open the current folder with all the files inside, you could also pass the name of a file as an argument and it will be opened in sublime.
