@@ -38,3 +38,8 @@ According to [this](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=4461) f
 	1. Find the location of the ```.bash_profile``` file with this: ```echo $HOME```. If the file does not exist, create one with the same name.
 	2. Add an [```alias```](http://tldp.org/LDP/abs/html/aliases.html) line to the file using this: ```alias subl="/c/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"``` (the path to the actual instance of sublime must be different for every installation, for instance, I changed it to ```"/c/Program\ Files/Sublime\ Text/sublime_text.exe"```)
 	3. If you pass a ```.``` to the command, it will open the current folder with all the files inside, you could also pass the name of a file as an argument and it will be opened in sublime.
+* Sublime Text: To add a key binding for a command on the command palette:
+	* If you already know the command name (and its arguments):
+		* Go to ```Preferences > Key Bindings - User``` and Add the key binding like so:
+			```{ "keys": ["ctrl+alt+a"], "command": "align_tab", "args": {"live_preview": true} }```
+	* In case you don't know the command, you can open Sublime Text's console (```View > Show Console ```) and type: ```sublime.log_commands(True)```. Open the command palette and trigger the command, the console will show it's name: ```command: align_tab {"live_preview": true}```

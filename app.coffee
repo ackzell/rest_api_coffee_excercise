@@ -1,7 +1,11 @@
 # Calling the packages I need to build the app
-express    = require 'express'      # requiring express
-app        = express()              # defining the app namespace
-bodyParser = require 'body-parser'  # body parser needs to be required independently in express 4
+express    = require 'express'           # requiring express
+app        = express()                   # defining the app namespace
+bodyParser = require 'body-parser'       # body parser needs to be required independently in express 4
+mongoose   = require 'mongoose'          # requiring mongoose
+Bear       = require './app/models/bear' # this is the model we'll be using
+
+mongoose.connect 'mongodb://localhost/bears'
 
 #configuring the app to use bodyParser
 # this will let us get the data from a POST
