@@ -42,4 +42,5 @@ According to [this](http://www.sublimetext.com/forum/viewtopic.php?f=2&t=4461) f
 	* If you already know the command name (and its arguments):
 		* Go to ```Preferences > Key Bindings - User``` and Add the key binding like so:
 			```{ "keys": ["ctrl+alt+a"], "command": "align_tab", "args": {"live_preview": true} }```
-	* In case you don't know the command, you can open Sublime Text's console (```View > Show Console ```) and type: ```sublime.log_commands(True)```. Open the command palette and trigger the command, the console will show it's name: ```command: align_tab {"live_preview": true}```
+	* [In case you don't know the command](http://stackoverflow.com/questions/11834652/bind-shortcut-to-command-palette-command), you can open Sublime Text's console (```View > Show Console ```) and type: ```sublime.log_commands(True)```. Open the command palette and trigger the command, the console will show it's name: ```command: align_tab {"live_preview": true}```
+	* ***Note:*** that is a plugin I installed, called [AlignTab](https://github.com/randy3k/AlignTab) 
